@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Les formulaires</title>
+ </head>
+ <body>
+	<p>
+		<form method="post" action="traitement.php">
+			<fieldset>
+				<legend>informations personnelles</legend>
+			<label for="pseudo"/>votre pseudo : </label>
+			<input type="text" name="pseudo" id="pseudo" placeholder="votre pseudo" size="30" maxlength="5" required/><br><br>
+			<label for="mdp"/>votre mot de passe : </label>
+			<input type="password" name="password" id="mdp"/><br><br>
+			<label for="email"/>votre email : </label>
+			<input type="email" name="email" id="email"/><br><br>
+			<label for="url"/>votre blog : </label>
+			<input type="url" name="url" id="url"/><br><br>
+			<label for="tele"/>votre n° de tel : </label>
+			<input type="tel" name="tel" id="tele"/><br><br>
+			<label for="age"/>votre age : </label></legend>
+			<input type="number" name="age" id="age" min="16"max="100" step="2" autofocus/><br><br>
+			</fieldset>
+			
+			<fieldset>
+				<legend>vos préferences</legend>
+			<label for="curseur"/>votre progression : </label>
+			<input type="range" name="curseur" id="curseur"/><br><br>
+			<label for="coleur"/>votre couleur preferé : </label>
+			<input type="color" name="coleur" id="coleur"/><br><br>
+			<label for="nais"/>votre date de naissance : </label>
+			<input type="date" name="naissance" id="nais"/><br><br>
+			<input type="search" name="recherche" id="recherche"/><br><br>
+			</fieldset>
+			<textarea rows="5" cols="50"></legend>
+			vous pouvez tapper vos commentaires ici...
+			</textarea><br><br>
+			<label>votre menu préferé : </label><br><br>
+			<input type="checkbox" name="pizza" id="pizza" checked	/><label> : pizza</label><br><br>
+			<input type="checkbox" name="panini" id="panini"/><label> : panini</label><br><br>
+			<input type="checkbox" name="toast" id="toast"/><label> : toast</label><br><br>
+			<label>votre plage d'age : </label><br><br>
+			<input type="radio" name="age"/><label>inférieure à 10 ans</label><br><br>
+			<input type="radio" name="age"/><label>10-20</label><br><br>
+			<input type="radio" name="age" checked/><label>21-30</label><br><br>
+			<input type="radio" name="age"/><label>31-45</label><br><br>
+			<input type="radio" name="age"/><label>46-60</label><br><br>
+			<input type="radio" name="age"/><label>plus vieux</label><br><br>
+			<select name="pays">
+				<optgroup label="Afrique">
+					<option value="maroc">maroc</option>
+				    <option value="egypte">egypte</option>
+				</optgroup>
+				<optgroup label="Europe">
+					<option value="france" selected>france</option>
+					<option value="allemagne">allemagne</option>
+				</optgroup>
+				<optgroup label="Amerique">
+					<option value="USA">USA</option>
+					<option value="mexic">mexic</option>
+				</optgroup>
+				<optgroup label="Asie">
+					<option value="chine">chine</option>
+					<option value="turkie">japon</option>
+				</optgroup>
+			</select><br><br>
+			<input type="submit" name="envoie" value="envoyer">
+			<input type="reset" name="efface" value="effacer">
+		</form>
+	</p>
+ </body>
+</html>
